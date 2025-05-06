@@ -1,4 +1,4 @@
-0provider "google" {
+provider "google" {
   project = "static-epigram-458808-h4"
   region  = "northamerica-south1"  # Replace with your desired region
 }
