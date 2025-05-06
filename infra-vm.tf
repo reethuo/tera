@@ -1,10 +1,10 @@
-provider "google" {
+0provider "google" {
   project = "static-epigram-458808-h4"
   region  = "northamerica-south1"  # Replace with your desired region
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "my-vm"
+  name         = "my-vm0"
   machine_type = "e2-micro"  # Replace with your desired machine type
   zone         = "northamerica-south1-a"  # Replace with your desired zone
 
