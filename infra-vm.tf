@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "test-vm0"
+  name         = "test-vm1"
   machine_type = "e2-micro"  # Replace with your desired machine type
   zone         = "northamerica-south1-a"  # Replace with your desired zone
 
