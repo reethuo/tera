@@ -32,5 +32,4 @@ resource "google_compute_instance" "vm_instance" {
 
 variable "vm_instance" {
 type = string
-default = ""
 }
