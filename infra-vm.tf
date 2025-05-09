@@ -11,7 +11,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "<+pipeline.variables.vm_instance>"
+  name         =  var.vm_instance 
   machine_type = "e2-micro"  # Replace with your desired machine type
   zone         = "northamerica-south1-a"  # Replace with your desired zone
 
@@ -28,4 +28,9 @@ resource "google_compute_instance" "vm_instance" {
       # Ephemeral external IP
     }
   }
+}
+
+variable "vm_instance" {
+type = string
+default = ""
 }
